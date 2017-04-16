@@ -67,14 +67,13 @@
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Inicio</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Registro</a>
-                    @endif
-                </div>
+            <div class="top-right links">
+                @if (Auth::check())
+                <a href="{{ url('/home') }}">Inicio</a>
+                @else
+                <a href="{{ url('/login') }}">Login</a>
+                @endif
+            </div>
             @endif
 
             <div class="content">
@@ -83,13 +82,21 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                    <a href="#">¿Que es log&iacute;stica?</a>
+                    <a href="#">Noticias</a>
+                    <a href="#">¿Como funciona?</a>
+                    <a target="_blank" href="http://buscarv.com.mx">BuscarV</a>
+                    <a target="_blank"  href="http://www.buscarv.com.mx/index.php#consultoria">Conocenos</a>
+                </div> 
+
             </div>
+ <div style="position: absolute; bottom: 5px;">
+     <center><strong>
+                    <p> &copy; 2017 BuscarV. </p>
+                    </strong></center>
+ 
+ </div>       
         </div>
+       
     </body>
 </html>
